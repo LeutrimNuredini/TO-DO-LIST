@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>TO-DO-LIST</title>
+  </head>
+
+  <body>
+    <form id="todo-form">
+      <div class="container mt-5">
+        <h1 class="text-center">CREATE TO DO LIST</h1>
+        <dv class="showAlert"></dv>
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" id="title" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <input type="text" id="description" class="form-control" />
+        </div>
+        <button
+          type="submit"
+          id="submit"
+          class="btn btn-primary btn-lg btn-block"
+        >
+          Submit
+        </button>
+    </form>
+
+        <table class="table mt-5">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="todo-list"></tbody>
+        </table>
+      </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
